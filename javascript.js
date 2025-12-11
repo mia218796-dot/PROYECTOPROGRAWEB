@@ -1,4 +1,3 @@
-// Animación suave al mostrar las tarjetas
 document.querySelectorAll('.tarjeta').forEach((card, index) => {
     card.style.opacity = "0";
     card.style.transform = "translateY(30px)";

@@ -11,14 +11,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .logo {
-    width: 70px;  
+    width: 120px;  
     height: auto;
     object-fit: contain;
 }
@@ -29,18 +29,21 @@ body {
 
 .titulo-contenedor h1 {
     margin: 0;
-    font-size: 1.9rem;
+    font-size: 60px;
+}
+
+.titulo-contenedor h2 {
+    margin: 0;
+    font-size: 35px;
 }
 
 .titulo-contenedor p {
     margin: 5px 0 0;
-    font-size: 1rem;
+    font-size: 18px;
     opacity: 0.85;
 }
 
-/* ================================
-   TARJETAS
-================================ */
+/* ===============TARJETAS=============== */
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -77,7 +80,7 @@ fieldset {
 .tarjeta button {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #B2677B; /* Rosa fuerte */
+    background-color: #B2677B; 
     color: white;
     border: none;
     border-radius: 8px;
@@ -89,13 +92,11 @@ fieldset {
     background-color: #8d5364;
 }
 
-/* ================================
-   FOOTER
-================================ */
+
 footer {
     margin-top: 40px;
     padding: 30px;
-    background-color: #F7DDE2; /* Rosa claro */
+    background-color: #F7DDE2; 
 }
 
 .footer-grid {
@@ -116,24 +117,22 @@ footer p {
     opacity: 0.8;
 }
 
-/* ================================
-   RESPONSIVE (CELULAR)
-================================ */
+
 @media (max-width: 768px) {
 
-    /* Header se acomoda */
+    /* Header */
     .header {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Tarjetas en una sola columna */
+    /* Tarjetas en columna */
     .contenedor {
         grid-template-columns: 1fr;
         width: 95%;
     }
 
-    /* Footer también */
+    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
